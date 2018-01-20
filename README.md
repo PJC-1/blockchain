@@ -7,7 +7,8 @@ Helpful Links
 
 >
 >  [crypto-js](https://github.com/brix/crypto-js)
->
+>  
+> a medium article [a block chain in 200 lines of code](https://medium.com/@lhartikk/a-blockchain-in-200-lines-of-code-963cc1cc0e54)
 >
 
 
@@ -26,4 +27,14 @@ Blockchain
 > It is a special case in that it does not reference a previous block, and for *Bitcoin* and almost all of its derivatives, it produces an unspendable subsidy.
 >
 > For more information on the **genesis block** of a blockchain, here is a [link](https://en.bitcoin.it/wiki/Genesis_block) to bitcoinwiki.
+>  
+
+**Difficulty**
+
+>
+> **Difficulty** is a measure of how difficult it is to find a hash below a given target.
+>  
+> The Bitcoin network has a global block difficulty. Valid blocks must have a hash below this target. Mining pools also have a pool-specific share difficulty setting a lower limit for shares.
+>  
+> For more information and examples on the **difficulty** of a blockchain, here is a [link](https://en.bitcoin.it/wiki/Difficulty) to bitcoinwiki.
 >  
