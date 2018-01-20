@@ -6,7 +6,7 @@ class Block{
     this.timestamp = timestamp;
     this.data = data;
     this.previousHash = previousHash;
-    this.hash = this.calculateHash;
+    this.hash = this.calculateHash();
   }
 
   calculateHash(){
@@ -37,7 +37,7 @@ class Blockchain{
     for(let i = 1; i < this.chain.length; i++){
       const currentBlock = this.chain[i];
       const previousBlock = this.chain[i - 1];
-
+      console.log(i);
       if(currentBlock.hash !== currentBlock.calculateHash()){
         return false;
       }
@@ -46,8 +46,8 @@ class Blockchain{
         return false;
       }
 
-      return true;
     }
+    return true;
   }
 }
 
@@ -55,6 +55,11 @@ class Blockchain{
 let goCoin = new Blockchain();
 goCoin.addBlock(new Block(1, "01/02/2018", { amount: 4 }));
 goCoin.addBlock(new Block(2, "01/04/2018", { amount: 10 }));
+goCoin.addBlock(new Block(3, "01/06/2018", { amount: 20 }));
+
+goCoin.chain[2].data = { amount: 100 };
+goCoin.chain[2].hash = goCoin.chain[2].calculateHash();
+
+console.log(JSON.stringify(goCoin, null, 4));
 
 console.log('Is blockchain valid? ' + goCoin.isChainValid());
-// console.log(JSON.stringify(goCoin, null, 4));
