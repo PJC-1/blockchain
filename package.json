@@ -1,0 +1,27 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "Building a Simple Blockchain in JavaScript\r ===================\r > Following Savjee's youtube tutorial on [Creating a blockchain with Javascript](https://www.youtube.com/watch?v=zVqczFZr124). The following includes notes, links, and examples from the tutorial and other resources.",
+  "main": "main.js",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "elliptic": "^6.4.1"
+  },
+  "devDependencies": {
+    "crypto-js": "^3.1.9-1",
+    "elliptic": "^6.4.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PJC-1/blockchain.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PJC-1/blockchain/issues"
+  },
+  "homepage": "https://github.com/PJC-1/blockchain#readme"
+}
